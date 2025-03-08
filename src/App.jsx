@@ -10,7 +10,7 @@ function App() {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 9000);
+      }, 7000);
     }
 
     fakeDataFetch();

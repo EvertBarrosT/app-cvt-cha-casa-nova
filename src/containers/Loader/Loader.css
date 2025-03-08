@@ -1,0 +1,23 @@
+.video-meio {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Preenche toda a tela */
+    overflow: hidden;
+}
+  
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra toda a área */
+    z-index: -1; /* Mantém o vídeo atrás do conteúdo */
+}
+
+#logo {
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+}
