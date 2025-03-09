@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Loader from './containers/Loader/Loader';
+import Header from './containers/Header/Header';
 
 function App() {
 
@@ -10,16 +11,20 @@ function App() {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 7000);
+      }, 4000);
     }
 
     fakeDataFetch();
   }, [])
 
   return isLoading ? (
-    <Loader></Loader>
+    <div className="app-container">
+      <Loader></Loader>
+    </div>
   ) : (
-    <h1>Sejá bem vindo!</h1> 
+    <div className="app-container">
+        <Header/>
+    </div>
   );
 }
 

@@ -1,0 +1,28 @@
+#bodyHeader{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    box-shadow: 2px 1px 5px;
+    align-items: center;
+}
+
+#logotipo{
+    vertical-align: middle;
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+}
+
+#nav1{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-self: center;
+}
+
+#nav2{
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    justify-self: end;
+}
